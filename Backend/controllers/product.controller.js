@@ -1,6 +1,6 @@
 import { ObjectId } from "mongodb";
-import { ProductModel, CarouselModel } from "../models/products.model.js";
-import PurchaseModel from "../models/purchased.model.js";
+import { ProductModel }from "../models/products.model.js";
+import {PurchaseModel} from "../models/purchased.model.js";
 
 export const postProduct = async (req, res) => {
   const { title, price, image1, image2, category, related_to, rating } = req.body;

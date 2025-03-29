@@ -1,7 +1,9 @@
 import bcrypt from "bcrypt";
 import jwt from "jsonwebtoken";
-require("dotenv").config();
-import UserModel from "../models/user.model.js";
+import dotenv from "dotenv";
+
+dotenv.config();
+import {UserModel} from "../models/user.model.js";
 import blacklist from "../blacklistToken.js";
 
 export const registerUser = async (req, res) => {

@@ -8,7 +8,7 @@ import {
   getMany,
   getSuggestions,
 } from "../controllers/product.controller.js";
-import auth from "../middlewares/auth.middleware.js";
+import auth from "../middleware/auth.middleware.js";
 
 const prodRouter = express.Router();
 
